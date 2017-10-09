@@ -1,0 +1,23 @@
+
+
+program :- 
+
+P(Edward VII, George V).
+P(Victoria, Edward VII).
+P(Alexandra, George V).
+P(George VI, Elizabeth II).
+P(George V, George VI).
+P(William, George).
+P(William, Charlotte).
+P(Kate, George).
+P(Kate, Charlotte).
+
+M(Edward VII).
+M(George V).
+M(George VI)
+M(William).
+M(George).
+
+Father(x, y) :- P(x, y), M(x). 
+
+:- program.
